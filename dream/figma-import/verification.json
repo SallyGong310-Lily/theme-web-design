@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-03T08:20:42.626Z",
+  "message": "已导入两套画板，文字与矢量均可编辑。",
+  "boards": [
+    {
+      "name": "ONEIRA · Desktop · 1440",
+      "textNodes": 54
+    },
+    {
+      "name": "ONEIRA · Mobile · 390",
+      "textNodes": 37
+    }
+  ],
+  "scope": "Mocked Figma API verifies native text creation and SVG separation; not a live Figma import."
+}

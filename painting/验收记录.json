@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-01T08:23:55.619Z",
+  "browser": "Chromium / installed Google Chrome",
+  "results": [
+    {
+      "name": "offline assets load",
+      "pass": true
+    },
+    {
+      "name": "next button and clip mask transition",
+      "pass": true
+    },
+    {
+      "name": "keyboard arrows, Home and End",
+      "pass": true
+    },
+    {
+      "name": "rapid slide switching settles once",
+      "pass": true
+    },
+    {
+      "name": "layered pointer parallax",
+      "pass": true
+    },
+    {
+      "name": "detail, add, escape and focus restoration",
+      "pass": true
+    },
+    {
+      "name": "saved list persists after reload and exports a file",
+      "pass": true
+    },
+    {
+      "name": "automatic playback advances and can pause",
+      "pass": true
+    },
+    {
+      "name": "system reduced motion disables all motion",
+      "pass": true
+    },
+    {
+      "name": "desktop horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile width and minimum touch size",
+      "pass": true
+    },
+    {
+      "name": "mobile detail and focus trap",
+      "pass": true
+    },
+    {
+      "name": "320px layout",
+      "pass": true
+    },
+    {
+      "name": "no JavaScript errors or remote requests",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

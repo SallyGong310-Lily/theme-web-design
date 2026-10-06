@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-01T20:11:18.538Z",
+  "browser": "Microsoft Edge / Chromium headless",
+  "checks": [
+    "Initial slide and no automatic motion",
+    "Next control and clip-path entering transition",
+    "End and ArrowRight keyboard navigation with wraparound",
+    "Route selection, plan generation, actual download, Escape and focus return",
+    "Distinct transforms across parallax depth layers",
+    "Automatic carousel advances and can be paused",
+    "System reduced motion disables autoplay, transitions and parallax; keyboard still works",
+    "Manual motion toggle",
+    "390px mobile layout has no horizontal overflow",
+    "Mobile conversion dialog",
+    "320px narrow layout has no horizontal overflow",
+    "SVG editable text and vector paths; no raster UI",
+    "SVG parses in browser",
+    "No JavaScript errors or external network requests"
+  ],
+  "svgCounts": {
+    "text": 62,
+    "paths": 1306,
+    "images": 0
+  },
+  "errors": [],
+  "remoteRequests": [],
+  "figma": "Native Figma import not tested; standard text/path/group SVG checked"
+}

@@ -1,0 +1,69 @@
+{
+  "time": "2026-10-03T08:16:21.282Z",
+  "browser": "154.0.4258.48",
+  "tests": [
+    {
+      "test": "Next changes artwork and text; mask reveal animation is active",
+      "result": "PASS"
+    },
+    {
+      "test": "Previous wraps from first to third",
+      "result": "PASS"
+    },
+    {
+      "test": "Arrow/Home/End/Enter/Escape keyboard controls and focus restoration",
+      "result": "PASS"
+    },
+    {
+      "test": "Dream note saved, persisted through reload, and removed",
+      "result": "PASS"
+    },
+    {
+      "test": "Three scenery depths respond with different pointer translations",
+      "result": "PASS"
+    },
+    {
+      "test": "System reduced-motion disables reveal, CSS transition and parallax",
+      "result": "PASS"
+    },
+    {
+      "test": "Manual reduced-motion toggle works",
+      "result": "PASS"
+    },
+    {
+      "test": "Collection cards and next dream in modal work",
+      "result": "PASS"
+    },
+    {
+      "test": "No horizontal overflow at 320, 390, 768, 1024 and 1440px",
+      "result": "PASS"
+    },
+    {
+      "test": "Horizontal touch gesture changes slide",
+      "result": "PASS"
+    },
+    {
+      "test": "Storage failure produces truthful non-persistent save feedback",
+      "result": "PASS"
+    },
+    {
+      "test": "No browser JavaScript errors; no network requests",
+      "result": "PASS"
+    },
+    {
+      "test": "SVG contains editable text and vector paths; no raster or foreignObject",
+      "result": "PASS"
+    },
+    {
+      "test": "Figma importer JavaScript syntax valid (live Figma import not executed)",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "networkRequests": [],
+  "limitations": [
+    "Figma importer verified for syntax and structure; live Figma runtime and font rendering have not been tested.",
+    "PNG previews are actual browser screenshots.",
+    "Mobile SVG is a condensed composition; mobile HTML is responsive and uses larger scene cards."
+  ]
+}

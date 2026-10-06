@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九大主题网页设计</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; min-height:100vh; background:#0f1220; color:#fff; display:flex; flex-direction:column; align-items:center; padding:60px 24px; }
+  h1 { font-size:2.4rem; margin-bottom:12px; background:linear-gradient(90deg,#7dd3fc,#c4b5fd,#fca5a5); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  p.sub { color:#9ca3af; margin-bottom:48px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; max-width:1080px; width:100%; }
+  a.card { display:block; padding:28px 24px; border-radius:16px; text-decoration:none; color:#fff; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); transition:transform .2s, background .2s; }
+  a.card:hover { transform:translateY(-4px); background:rgba(255,255,255,.12); }
+  .emoji { font-size:2.2rem; display:block; margin-bottom:12px; }
+  .name { font-size:1.2rem; font-weight:600; margin-bottom:6px; }
+  .en { color:#9ca3af; font-size:.85rem; text-transform:uppercase; letter-spacing:2px; }
+</style>
+</head>
+<body>
+  <h1>九大主题网页设计</h1>
+  <p class="sub">点击卡片进入对应主题网页</p>
+  <div class="grid">
+    <a class="card" href="pet/index.html"><span class="emoji">🐱</span><span class="name">宠物主题</span><span class="en">Pet</span></a>
+    <a class="card" href="math/index.html"><span class="emoji">🔢</span><span class="name">数学主题</span><span class="en">Math</span></a>
+    <a class="card" href="dream/index.html"><span class="emoji">🌙</span><span class="name">梦镜主题</span><span class="en">Dream</span></a>
+    <a class="card" href="forest/index.html"><span class="emoji">🌲</span><span class="name">森林主题</span><span class="en">Forest</span></a>
+    <a class="card" href="ocean/index.html"><span class="emoji">🌊</span><span class="name">海洋主题</span><span class="en">Ocean</span></a>
+    <a class="card" href="painting/index.html"><span class="emoji">🎨</span><span class="name">绘画主题</span><span class="en">Painting</span></a>
+    <a class="card" href="western/index.html"><span class="emoji">🤠</span><span class="name">西部主题</span><span class="en">Western</span></a>
+    <a class="card" href="cyberpunk/index.html"><span class="emoji">🌃</span><span class="name">赛伯朋克主题</span><span class="en">Cyberpunk</span></a>
+    <a class="card" href="rainy/index.html"><span class="emoji">🌧️</span><span class="name">雨季主题</span><span class="en">Rainy</span></a>
+  </div>
+</body>
+</html>

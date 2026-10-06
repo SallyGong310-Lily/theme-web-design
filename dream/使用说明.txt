@@ -1,0 +1,41 @@
+梦境 ONEIRA · 梦境漫游档案馆
+交付版本：20261003-ONEIRA-01
+
+快速体验
+1. 解压 ZIP 后，双击 index.html，即可在当前版本的 Edge / Chrome 中离线运行。
+2. 点击左右箭头或三条指示线切换梦境；点击“进入这场梦”打开沉浸式场景。
+3. 将键盘焦点移入轮播后，用 ← / → 切换，Home / End 跳转首尾，Enter 进入。弹窗内使用 Tab 导航，Esc 关闭并返回原焦点。
+4. 鼠标在主视觉上移动可感受三个深度层次；触屏可左右滑动切换，不拦截纵向滚动。
+5. 系统开启“减少动态效果”时，关闭遮罩动画、视差及平滑滚动。页脚也提供手动开关。轮播不会自动播放。
+6. 收藏可以附上 80 字内的心情，保存在当前浏览器；同一梦境再次保存会更新原备注。可从“我的梦境”移除收藏。
+7. 浏览器若禁止本地存储，会明确提示收藏仅在当前页面有效。不同浏览器、文件路径及设备不共享收藏。
+
+设计稿与 Figma
+• design-desktop.svg：1440 × 1810 桌面画板。
+• design-mobile.svg：390 × 2340 手机精简画板；原型手机端采用更大的场景卡片，页面长度随内容变化。
+• SVG 的所有文字保留为 <text>，插画与界面均由可编辑的路径、基础形状与渐变构成，无截图铺底、无外部图片链接。
+• Figma 不同版本直接导入 SVG 时可能将文字轮廓化。因此需编辑文字时，推荐使用随附 figma-import 导入器，把矢量与原生 TextNode 分别建立。
+• Figma Desktop：Plugins → Development → Import plugin from manifest，选择 figma-import/manifest.json，再运行 ONEIRA 梦境 · 可编辑导入。
+• 如果客户端要求当前账户生成的插件 ID：通过 Development → New plugin 创建本地插件，保留生成的 ID，把本包 code.js 复制为该插件的 main 文件，并保留 documentAccess: dynamic-page。无需发布插件。
+• 中文标题使用宋体，正文微软雅黑，英文衬线 Georgia；未嵌入字体文件。缺少字体时导入器会尝试替代字体，请检查中文字符。英文斜体及基线可能需微调。
+• 已检查 SVG 结构、导入器语法及原生文本重建逻辑；本次未在真实 Figma 客户端执行导入。没有生成或冒称原生 .fig 文件。
+• 官方开发接口参考：https://developers.figma.com/docs/plugins/manifest/ 和 https://developers.figma.com/docs/plugins/api/figma/ 。
+
+文件清单
+index.html                     单文件 HTML / CSS / JS；含全部内联插画，零网络请求
+design-desktop.svg             桌面可编辑设计稿
+design-mobile.svg              移动端可编辑设计稿
+assets/dream-01.svg            原创「潮汐之门」场景
+assets/dream-02.svg            原创「悬浮花园」场景
+assets/dream-03.svg            原创「月光档案」场景
+preview-desktop.png            实际桌面网页长截图
+preview-mobile.png             实际手机网页长截图
+preview-interaction.png        实际沉浸弹窗截图
+preview-svg-desktop.png        SVG 设计稿浏览器渲染图
+figma-import/                  本地 Figma 导入器及说明
+设计说明.txt                    视觉语言、信息结构与交互节奏
+素材与授权.txt                  素材来源说明
+verification.json              实际浏览器验证记录
+checksums.sha256               交付文件完整性摘要
+
+本包是可用的本地概念原型，收藏使用浏览器本地存储；未连接账户服务或云端数据库。

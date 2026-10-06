@@ -1,0 +1,51 @@
+AXIOM · 万物有理
+数学网页概念设计 / 2026-10-01 / 首次原创方案
+
+1. 打开与浏览
+双击 index.html，以新版 Edge / Chrome 打开即可。HTML、CSS、JavaScript 与全部插画已内嵌，不需要网络、服务器、npm 或安装依赖。
+桌面与手机均可使用；PNG 是静态预览，不具备交互。
+
+2. 交互操作
+• 首屏 01 / 02 / 03 和左右圆形按钮切换章节；移动端也可在非按钮区域左右滑动。
+• Tab 聚焦首屏或其中的控件后，← / → 切换，Home / End 到第一章或第三章；Enter / 空格激活按钮。
+• 切换使用双阶段裁切遮罩；无自动播放。鼠标移动和页面滚动产生不同深度的图形、网格和注释视差。
+• 点击“进入…”或章节卡片打开实验，拖动滑块观察圆、莫比乌斯带投影、正弦波的变化。
+• Esc 关闭弹窗并返回原控件；Tab 在模态弹窗中循环。
+• 收藏可添加、移除、重新进入章节。数据仅保存在当前浏览器的 localStorage；禁止存储时降级为本次会话收藏。不同浏览器不会同步。
+• 自动遵循 prefers-reduced-motion；系统减少动态效果开启时关闭遮罩动画和视差，轮播立即切换。页脚也可手动关闭动态效果。
+
+3. Figma 与可编辑文字
+design-desktop.svg：1440 × 1770；design-mobile.svg：390 × 2400。
+文件中的文字都是独立 <text> 节点，图形为原生矢量，不含截图、不含栅格嵌入、不转曲文字。可以直接将 SVG 拖入 Figma 观察设计。
+
+为确保在 Figma 内得到真正的文字层，推荐使用附带的离线导入器：
+① 在 Figma 桌面版打开一个可编辑的 Design 文件。
+② Plugins → Development → Import plugin from manifest，选择 figma-importer/manifest.json。
+③ 运行 AXIOM — editable SVG import，在窗口里选择 desktop 或 mobile SVG，点击“导入画板”。
+④ 导入器将图形作为矢量导入，并为每个 <text> 创建 Figma TextNode，支持文字修改。无需账号密钥或联网。
+若本地开发插件需要分配正式 ID，请用 Development → New plugin 创建一次本地插件，把 Figma 分配的 id 填入 manifest.json；其余字段保持不变。
+文字优先使用本机宋体 / 微软雅黑 / Arial，缺失时回退到可用字体。字体替换和基线差异可能需要微调。Figma 的导入结果未在已登录的 Figma 客户端内实测；源码结构、文字解析与导入器语法已核对。
+官方接口参考：
+https://developers.figma.com/docs/plugins/api/properties/figma-createtext/
+https://developers.figma.com/docs/plugins/api/properties/figma-loadfontasync/
+https://developers.figma.com/docs/plugins/manifest/
+
+4. 文件索引
+index.html                      单文件离线交互原型
+design-desktop.svg               桌面可编辑矢量设计
+design-mobile.svg                移动端可编辑矢量设计
+preview-desktop.png              桌面原型实际截图
+preview-mobile.png               移动端原型实际截图
+preview-svg-desktop.png          桌面 SVG 实际渲染
+preview-svg-mobile.png           移动端 SVG 实际渲染
+assets/form-01.svg               原创环面插画
+assets/form-02.svg               原创莫比乌斯带插画
+assets/form-03.svg               原创波动曲面插画
+figma-importer/                  保留文字的 Figma 导入器
+设计说明.txt                     视觉、转化与节奏说明
+素材与许可.txt                   素材来源与复用说明
+验收记录.txt                     验收项目与实际结果
+交付清单.sha256                  文件完整性校验
+work/                           本地构建与验证过程，不进入交付 ZIP
+
+这是完整的网页概念原型，收藏为本地体验，不含后台服务、账户体系或付费功能。

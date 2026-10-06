@@ -1,0 +1,128 @@
+{
+  "testedAt": "2026-10-05T08:17:06.284Z",
+  "browser": "Microsoft Edge / Playwright",
+  "checks": [
+    {
+      "name": "mask transition animates",
+      "pass": true
+    },
+    {
+      "name": "next slide",
+      "pass": true
+    },
+    {
+      "name": "keyboard right",
+      "pass": true
+    },
+    {
+      "name": "keyboard home",
+      "pass": true
+    },
+    {
+      "name": "carousel wraps",
+      "pass": true
+    },
+    {
+      "name": "pointer parallax",
+      "pass": true
+    },
+    {
+      "name": "scroll parallax",
+      "pass": true
+    },
+    {
+      "name": "matching journey modal",
+      "pass": true
+    },
+    {
+      "name": "escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "route booking selection",
+      "pass": true
+    },
+    {
+      "name": "booking confirmation",
+      "pass": true
+    },
+    {
+      "name": "reservation download",
+      "pass": true
+    },
+    {
+      "name": "system reduced motion disables transition",
+      "pass": true
+    },
+    {
+      "name": "system reduced motion no transform",
+      "pass": true
+    },
+    {
+      "name": "system setting reflected",
+      "pass": true
+    },
+    {
+      "name": "manual reduced motion",
+      "pass": true
+    },
+    {
+      "name": "390px no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile carousel click",
+      "pass": true
+    },
+    {
+      "name": "horizontal swipe",
+      "pass": true
+    },
+    {
+      "name": "320px no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "design-desktop.svg valid browser SVG",
+      "pass": true
+    },
+    {
+      "name": "design-desktop.svg editable text",
+      "pass": true
+    },
+    {
+      "name": "design-desktop.svg editable paths",
+      "pass": true
+    },
+    {
+      "name": "design-mobile.svg valid browser SVG",
+      "pass": true
+    },
+    {
+      "name": "design-mobile.svg editable text",
+      "pass": true
+    },
+    {
+      "name": "design-mobile.svg editable paths",
+      "pass": true
+    },
+    {
+      "name": "no javascript errors",
+      "pass": true
+    },
+    {
+      "name": "no external requests",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Figma native import not available; verified native SVG XML, editable text and paths in browser."
+  ],
+  "additionalChecks": {
+    "figmaImportHelperJavaScriptSyntax": "passed node --check",
+    "svgVisualReview": "desktop and mobile rendered and inspected",
+    "nativeFigmaImport": "not executed; documented in usage guide"
+  }
+}

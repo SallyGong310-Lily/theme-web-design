@@ -1,0 +1,38 @@
+余色 AFTERIMAGE — 素材来源与使用说明
+
+网页概念、文案、布局、交互和矢量界面元素：本次项目原创。
+绘画图像：Art Institute of Chicago（芝加哥艺术博物馆），API 的 is_public_domain 字段均为 true。
+使用政策：https://www.artic.edu/open-access/open-access-images
+CC0 1.0：https://creativecommons.org/publicdomain/zero/1.0/
+API 文档：https://api.artic.edu/docs/
+核对与下载日期：2026-10-01。
+图片已完整本地化；HTML 和 SVG 使用内嵌图像，不依赖远程图片地址。
+网页局部展示含取景裁切，详情弹窗保留完整画幅；未改绘原作。
+本概念不代表博物馆的官方服务或合作项目。
+字体调用本机 Georgia / SimSun（宋体）/ Microsoft YaHei，不分发商业字体文件。
+如目标设备无对应字体，会自动回退；Figma 导入工具会报告字体替代。
+
+睡莲 / Water Lilies
+Claude Monet, 1906; Oil on canvas
+馆藏来源：https://www.artic.edu/artworks/16568
+Credit: Mr. and Mrs. Martin A. Ryerson Collection
+图像地址：https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/1200,/0/default.jpg
+本地文件：assets/painting-16568.jpg
+授权证据：assets/source-16568.json
+
+普尔维尔的悬崖步道 / Cliff Walk at Pourville
+Claude Monet, 1882; Oil on canvas
+馆藏来源：https://www.artic.edu/artworks/14620
+Credit: Mr. and Mrs. Lewis Larned Coburn Memorial Collection
+图像地址：https://www.artic.edu/iiif/2/b0effb1c-ff23-bbaa-f809-9fd94e31c1a0/full/1200,/0/default.jpg
+本地文件：assets/painting-14620.jpg
+授权证据：assets/source-14620.json
+
+麦垛：夏末 / Stacks of Wheat (End of Summer)
+Claude Monet, 1890–91; Oil on canvas
+馆藏来源：https://www.artic.edu/artworks/64818
+Credit: Gift of Arthur M. Wood, Sr. in memory of Pauline Palmer Wood
+图像地址：https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/1200,/0/default.jpg
+本地文件：assets/painting-64818.jpg
+授权证据：assets/source-64818.json
+

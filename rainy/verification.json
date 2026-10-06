@@ -1,0 +1,19 @@
+{
+  "testedAt": "2026-10-02T08:14:25.763Z",
+  "browser": "Microsoft Edge / Playwright",
+  "passed": [
+    "offline file:// loading; zero network requests",
+    "carousel next, chapter selection, wrapping",
+    "keyboard Left, Home, End",
+    "three-depth pointer parallax",
+    "manual reduced motion",
+    "OS reduced-motion: transitions/parallax disabled",
+    "dialog focus, Escape, focus restoration",
+    "editable SVG postcard download",
+    "mobile 390px, 320px, tablet 768px overflow",
+    "720px viewport at 200% root font size",
+    "touch swipe",
+    "no JavaScript errors"
+  ],
+  "errors": []
+}

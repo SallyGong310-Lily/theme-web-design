@@ -1,0 +1,15 @@
+{
+  "name": "ONEIRA 梦境 · 可编辑导入",
+  "id": "oneira-local-editable-import",
+  "api": "1.0.0",
+  "main": "code.js",
+  "documentAccess": "dynamic-page",
+  "editorType": [
+    "figma"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

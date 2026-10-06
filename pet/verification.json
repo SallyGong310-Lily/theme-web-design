@@ -1,0 +1,106 @@
+{
+  "runAt": "2026-10-04T08:13:44.867Z",
+  "browser": "153.0.8010.54",
+  "tests": [
+    {
+      "name": "Initial dog visible",
+      "pass": true
+    },
+    {
+      "name": "Next button + mask animation",
+      "pass": true
+    },
+    {
+      "name": "Mask animation ends",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End",
+      "pass": true
+    },
+    {
+      "name": "Keyboard wraps last to first",
+      "pass": true
+    },
+    {
+      "name": "Keyboard wraps first to last",
+      "pass": true
+    },
+    {
+      "name": "Keyboard Home",
+      "pass": true
+    },
+    {
+      "name": "Direct slide selection",
+      "pass": true
+    },
+    {
+      "name": "Dialog opens with slide pet selected",
+      "pass": true
+    },
+    {
+      "name": "Personalized plan result",
+      "pass": true
+    },
+    {
+      "name": "Reset planner",
+      "pass": true
+    },
+    {
+      "name": "Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Care detail opens",
+      "pass": true
+    },
+    {
+      "name": "Dialog keyboard focus contained",
+      "pass": true
+    },
+    {
+      "name": "Parallax has distinct depth transforms",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion disables mask and parallax",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 320px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 390px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 768px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 1440px",
+      "pass": true
+    },
+    {
+      "name": "No external requests",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript errors",
+      "pass": true
+    },
+    {
+      "name": "Editable design SVG structures",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "svgFiles": [
+    "design-desktop-cat.svg",
+    "design-desktop-dog.svg",
+    "design-desktop-rabbit.svg",
+    "design-mobile.svg"
+  ]
+}

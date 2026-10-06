@@ -1,0 +1,27 @@
+AXIOM 交付验收
+本地时间：2026-10-01T04:46:54.397163+08:00
+
+已核对：
+✓ design-desktop.svg: 57 个独立 text 节点；无栅格图像、无 foreignObject；XML 解析通过。
+✓ design-mobile.svg: 40 个独立 text 节点；无栅格图像、无 foreignObject；XML 解析通过。
+
+浏览器实测（本机 Edge，无头模式）：
+✓ carousel buttons and wrap
+✓ keyboard arrows and Home
+✓ mask transition active
+✓ distinct layer parallax
+✓ chapter dialogs x3
+✓ interactive parameter
+✓ collection add/remove/persistence
+✓ Escape and focus return
+✓ system reduced motion live changes
+✓ manual motion toggle
+✓ mobile carousel
+✓ 390/320/768 no horizontal overflow
+✓ SVG rendering
+✓ zero runtime errors
+✓ zero network requests
+
+桌面与移动端截图已经人工视觉复核。原创图形、本地资源、使用说明齐全。
+Figma 导入器 JavaScript 语法核对通过；原生 Figma 客户端导入未实测，不声称已验证客户端导入结果。
+本次使用新的时间戳子目录，不覆盖此前成果。

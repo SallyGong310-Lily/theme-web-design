@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-10-01T08:24:50.448506+00:00",
+  "concept": "余色 AFTERIMAGE — 光的三种停留",
+  "requirements": {
+    "editable_svg": true,
+    "standalone_html": true,
+    "local_images": true,
+    "png_previews": true,
+    "instructions": true
+  },
+  "browser_checks_passed": 14,
+  "svg_checks": {
+    "余色-桌面-可编辑.svg": {
+      "live_text_elements": 84,
+      "embedded_images": 5,
+      "parsed_xml": true,
+      "native_import_metadata": true
+    },
+    "余色-手机-可编辑.svg": {
+      "live_text_elements": 77,
+      "embedded_images": 5,
+      "parsed_xml": true,
+      "native_import_metadata": true
+    }
+  },
+  "figma_client_import_tested": false,
+  "files": [
+    {
+      "path": "assets/painting-14620.jpg",
+      "bytes": 440821,
+      "sha256": "40facbeb3c0536d6560e5e910103e075c662e838d15ee53c963d3951429c93d1"
+    },
+    {
+      "path": "assets/painting-16568.jpg",
+      "bytes": 589165,
+      "sha256": "dd1edca100d45abb9c259320921e8d38cf6481843e95f4c7ea3e4ce848ba7b33"
+    },
+    {
+      "path": "assets/painting-64818.jpg",
+      "bytes": 292985,
+      "sha256": "0acf697c87568439c5968016e1afe396c8a9575d421300c91aa4d2242ea31b08"
+    },
+    {
+      "path": "assets/source-14620.json",
+      "bytes": 1109,
+      "sha256": "a171055f3f52a6615e737d00e7b63c718dba3ff951c5b49cb413a1023bee7736"
+    },
+    {
+      "path": "assets/source-16568.json",
+      "bytes": 1089,
+      "sha256": "51b0c4170ffae30f4120d5c93651eb879a5ef92d1ab840a4d4bb8a8fc7585279"
+    },
+    {
+      "path": "assets/source-64818.json",
+      "bytes": 1132,
+      "sha256": "690f9c33b5ddb735bdf902c3b27c03dc9185c8f458f662637350d50868669468"
+    },
+    {
+      "path": "Figma文字可编辑导入/code.js",
+      "bytes": 4656,
+      "sha256": "9c02181be3fc5beaf146c3b0fe4c69dafd7acdc5fabb8b9a0df919bc3c3d2de3"
+    },
+    {
+      "path": "Figma文字可编辑导入/manifest.json",
+      "bytes": 265,
+      "sha256": "5f3cd4021b14cd3c73d35ffa2eb0eb98d8b6e018b514482c13696e043bc1151f"
+    },
+    {
+      "path": "Figma文字可编辑导入/ui.html",
+      "bytes": 2209,
+      "sha256": "23f52f97bbbc5eb525dece139bca73a199ee5f4c1a703b29bbf0134055b9c31d"
+    },
+    {
+      "path": "余色-交互原型.html",
+      "bytes": 1795421,
+      "sha256": "184b2a38e39682c3b60e46099a0477159096067393be289230c905a83ade3d28"
+    },
+    {
+      "path": "余色-手机-可编辑.svg",
+      "bytes": 3209806,
+      "sha256": "ea584ff71bedbceea7073a260e123f04bb5e7a4ab775d1da9356e5a3c52ac680"
+    },
+    {
+      "path": "余色-桌面-可编辑.svg",
+      "bytes": 3215045,
+      "sha256": "78f72cc255b554d81613011c4ef1f80211e40c5b2ee0fe1eb78e754a4c624432"
+    },
+    {
+      "path": "使用说明.txt",
+      "bytes": 4918,
+      "sha256": "213e6357ebfa76c4917bdb89dbe113112c15aabf8c5e07abf2ab195341a8e491"
+    },
+    {
+      "path": "素材授权与来源.txt",
+      "bytes": 2067,
+      "sha256": "8d75ee56a35066b932d6a3fa686e3ccabe3be6afb2e7267c38ec108806296898"
+    },
+    {
+      "path": "设计说明.txt",
+      "bytes": 2869,
+      "sha256": "b909286dedcc9a67a585ec8d91e22cfe5e0a712cabb583935f602b65f583d004"
+    },
+    {
+      "path": "预览-手机.png",
+      "bytes": 1069306,
+      "sha256": "d8614c8e525e9e829a1b3a3a185a55197093a53235b21f3dbfb00b08e6f05bcd"
+    },
+    {
+      "path": "预览-桌面.png",
+      "bytes": 2134908,
+      "sha256": "f15b4da282bbeb005b87a5a9869018a3e4a6c95fbc35b87625e6dd507fb304b9"
+    },
+    {
+      "path": "验收记录.json",
+      "bytes": 1301,
+      "sha256": "5643069f4c2dcf285b2b6967c2108ed19dae646cca30576725cdf1bbf798c1e4"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" role="img" aria-label="原创dog纸雕感矢量插画"><ellipse cx="308" cy="563" rx="238" ry="43" fill="#B49D88" opacity=".2"/>
+    <path d="M79 556C58 475 42 402 80 352C113 408 96 477 96 548M91 496C134 464 148 423 133 390C95 417 89 454 91 496" fill="#687956"/>
+    <path d="M52 534H128L116 592H64Z" fill="#C27F60"/><path d="M63 541H118" stroke="#F1C8AE" stroke-width="4"/>
+    <ellipse cx="333" cy="547" rx="181" ry="45" fill="#A9B55F"/><path d="M154 544C170 604 474 606 512 544" fill="#899C50"/>
+    <path d="M190 565Q326 605 477 565" fill="none" stroke="#C5CF86" stroke-width="3"/>
+    <path d="M490 122l9 22 24 4-19 16 2 24-20-13-22 10 6-23-16-19 24-1Z" fill="#D7EB77"/>
+    <path d="M110 163v25m-12-13h25" stroke="#392C40" stroke-width="2"/>
+    <circle cx="525" cy="336" r="5" fill="#392C40"/><g id="dog-body"><path d="M398 477C473 449 502 477 477 512C459 536 417 537 393 524" fill="none" stroke="#A95F42" stroke-width="36" stroke-linecap="round"/>
+        <path d="M263 307C204 353 190 443 215 528C246 557 399 563 430 522C445 438 424 355 375 315Z" fill="#C68D60"/>
+        <path d="M293 331C257 395 270 466 283 514H364C390 427 375 373 344 330" fill="#F1D3A7"/>
+        <path d="M230 416L213 526Q211 548 248 548Q278 547 271 519L269 417M373 416L374 530Q377 550 408 545Q439 542 430 521L412 411" fill="#DDAA77"/>
+        <path d="M231 530v13m15-12v14m147-13v12m15-15v13" stroke="#AE7654" stroke-width="3" stroke-linecap="round"/>
+        <path d="M236 170C197 149 163 195 173 267C177 310 210 331 239 295L265 211M380 168C426 154 454 204 444 267C438 309 410 327 385 290L360 213" fill="#9D573F"/>
+        <path d="M203 201Q180 262 219 289M413 201Q444 265 406 292" fill="none" stroke="#BC7955" stroke-width="13" stroke-linecap="round"/>
+        <path d="M222 211C216 137 389 122 399 205L391 284C383 354 240 352 229 284Z" fill="#DEAD77"/>
+        <path d="M282 165C266 199 284 227 276 246L331 253C320 204 333 178 317 155" fill="#F5DDB6"/>
+        <ellipse cx="265" cy="234" rx="9" ry="12" fill="#392C40"/><ellipse cx="354" cy="232" rx="9" ry="12" fill="#392C40"/>
+        <circle cx="268" cy="230" r="3" fill="#FFF8EA"/><circle cx="357" cy="228" r="3" fill="#FFF8EA"/>
+        <path d="M248 210q14-12 27-4m69-3q17-9 28 5" stroke="#8A533E" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <ellipse cx="283" cy="283" rx="40" ry="34" fill="#F2D2A5"/><ellipse cx="334" cy="283" rx="40" ry="34" fill="#F2D2A5"/>
+        <path d="M291 254Q309 246 326 255Q322 275 309 278Q295 273 291 254" fill="#392C40"/>
+        <path d="M308 276v16m0 0q-13 14-25 0m25 0q11 14 26 0" fill="none" stroke="#392C40" stroke-width="3" stroke-linecap="round"/>
+        <path d="M303 303Q317 309 326 302L325 320Q316 340 306 322Z" fill="#C77977"/>
+        <path d="M237 326Q313 357 387 323L377 350Q311 377 246 351Z" fill="#D7EB77"/>
+        <circle cx="312" cy="362" r="17" fill="#392C40"/><path d="M306 364l5 5 9-12" fill="none" stroke="#D7EB77" stroke-width="3"/>
+        </g></svg>
