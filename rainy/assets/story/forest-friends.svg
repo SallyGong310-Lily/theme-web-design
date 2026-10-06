@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#8ba393"/><stop offset="1" stop-color="#1d352e"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<g fill="#e6eade" opacity=".1"><path d="M420 0 L560 0 L380 900 L280 900 Z"/><path d="M700 0 L800 0 L560 900 L470 900 Z" opacity=".7"/><path d="M920 0 L990 0 L800 900 L720 900 Z" opacity=".5"/></g>
+<g fill="#22372f">
+<path d="M140 900 Q150 500 120 340 Q110 260 130 180 L190 180 Q210 280 200 380 Q185 520 195 900 Z"/>
+<path d="M420 900 Q430 480 400 300 L470 300 Q490 460 480 620 Q470 760 475 900 Z"/>
+<path d="M860 900 Q850 520 880 340 L950 340 Q940 520 930 700 Q925 800 928 900 Z"/>
+</g>
+<g fill="#2c423a"><path d="M620 900 Q610 560 640 380 Q650 300 690 240 L740 260 Q710 340 705 440 Q700 640 710 900 Z"/></g>
+<g fill="#16281f">
+<path d="M-20 160 Q200 60 480 120 T900 90 Q1080 70 1220 130 V-20 H-20 Z"/>
+<path d="M-20 60 Q300 -30 640 40 T1220 20 V-20 H-20Z"/>
+</g>
+<g stroke="#1c2f27" stroke-width="7" fill="none"><path d="M150 320 Q60 260 20 180"/><path d="M430 380 Q340 300 300 220"/><path d="M880 420 Q980 340 1020 260"/><path d="M660 320 Q570 260 540 190"/></g>
+<g fill="#33493f"><ellipse cx="60" cy="170" rx="90" ry="46"/><ellipse cx="310" cy="210" rx="80" ry="42"/><ellipse cx="1000" cy="250" rx="90" ry="48"/><ellipse cx="550" cy="180" rx="76" ry="40"/></g>
+<path d="M1050 300 Q1070 420 1050 520 Q1040 600 1060 660 L1110 660 Q1090 580 1100 500 Q1110 400 1095 300 Z" fill="#afc2b0" opacity=".85"/>
+<g fill="#e8efe6" opacity=".7"><ellipse cx="1080" cy="680" rx="60" ry="10"/><ellipse cx="1080" cy="710" rx="44" ry="8"/></g>
+<g fill="#e8e4d4">
+<path d="M300 470 q18 -16 36 -6 q16 10 30 2 q-12 26 -34 24 q-24 -2 -32 -20Z"/>
+<path d="M720 380 q15 -13 29 -5 q13 8 24 2 q-10 21 -27 19 q-20 -1 -26 -16Z"/>
+</g>
+<g stroke="#e8e4d4" stroke-width="5" fill="none" stroke-linecap="round">
+<path d="M500 520 q24 -20 48 -8"/><path d="M560 470 q22 -18 44 -8"/>
+</g>
+<g stroke="#5c7a63" stroke-width="5" fill="none" stroke-linecap="round">
+<path d="M240 900 q-10 -60 14 -96"/><path d="M270 900 q-6 -44 12 -70"/><path d="M980 900 q-10 -56 12 -88"/><path d="M1010 900 q-6 -40 10 -62"/>
+</g>
+<g fill="#e8efe6" opacity=".12"><ellipse cx="600" cy="460" rx="640" ry="140"/></g>
+</svg>

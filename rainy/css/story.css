@@ -1,0 +1,115 @@
+/* ============================================================
+   雨季 · 新版 Scroll Storytelling 样式（听雨/访友/惊雷 三页共用）
+   依赖 effects.css 提供的变量与特效组件样式
+   ============================================================ */
+:root{--paper:#f2f0e8;--ink:#233e37;--muted:#63736b;--line:#cbd0c4;--accent:#a24432;--serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px}
+a{color:inherit;text-decoration:none}
+img{display:block}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+
+/* ---------- 全屏氛围层（ambient.js 注入） ---------- */
+.fx-viewport{position:fixed;inset:0;z-index:3;pointer-events:none;overflow:hidden;
+  --dropA:35,62,55;   /* 白天纸底上用墨色雨丝 */
+  --mistA:35,62,55;
+ 
+}
+html.night .fx-viewport{--dropA:223,233,226;--mistA:208,224,214}
+.fx-viewport .rain-layer{position:absolute;inset:0;overflow:hidden}
+.fx-viewport .drop{
+  position:absolute;top:-15%;
+  width:var(--w,1.5px);height:var(--h,60px);border-radius:2px;
+  background:linear-gradient(to bottom,transparent 0%,rgba(var(--dropA),var(--o,.5)) 35%,rgba(var(--dropA),.9) 100%);
+  transform:rotate(calc(var(--wind,9deg)*var(--wk,1) + var(--persp,0deg)));
+  animation:story-fall var(--d,1s) linear infinite;
+  animation-delay:var(--dl,0s);
+  filter:blur(var(--blur,0px));
+  will-change:transform;
+}
+@keyframes story-fall{to{transform:rotate(calc(var(--wind,9deg)*var(--wk,1) + var(--persp,0deg))) translate(0px,1500px)}}
+.fx-viewport .rl{position:absolute;inset:0}
+.fx-viewport .fx-mist{position:absolute;left:-20%;bottom:-4%;width:140%;height:34%;
+  background:
+    radial-gradient(ellipse 48% 62% at 28% 62%,rgba(var(--mistA),.08),transparent 70%),
+    radial-gradient(ellipse 44% 56% at 68% 48%,rgba(var(--mistA),.07),transparent 72%);
+  filter:blur(9px);animation:story-mist 30s ease-in-out infinite alternate;opacity:.5;transition:opacity 1.5s ease}
+@keyframes story-mist{from{transform:translateX(-3.5%)}to{transform:translateX(3.5%)}}
+
+/* ---------- 阅读进度条 ---------- */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:40}
+
+/* ---------- 章节侧导航（桌面） ---------- */
+.chapter-way{position:fixed;left:30px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:22px}
+.chapter-way a{display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:2px;color:var(--muted)}
+.chapter-way .dot{width:7px;height:7px;border-radius:50%;border:1px solid var(--muted);transition:all .3s}
+.chapter-way a.on{color:var(--accent)}
+.chapter-way a.on .dot{background:var(--accent);border-color:var(--accent);transform:scale(1.3)}
+.chapter-way .lbl{opacity:0;transition:opacity .3s}
+.chapter-way a:hover .lbl,.chapter-way a.on .lbl{opacity:1}
+
+/* ---------- 首屏（主插画 + 题名 + 作者 + 时间） ---------- */
+.story-head{position:relative;min-height:100vh;display:flex;align-items:flex-end;isolation:isolate;overflow:hidden;background:#27463c}
+.story-head .hero-art{position:absolute;inset:-4%;z-index:0}
+.story-head .hero-art img{width:100%;height:100%;object-fit:cover}
+.story-head:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(12,35,29,.42) 0%,rgba(12,35,29,.18) 40%,rgba(12,35,29,.82) 100%)}
+.story-head-inner{position:relative;z-index:2;width:100%;max-width:1400px;margin:0 auto;padding:0 4.5% 11vh;color:#f0f0e6}
+.crumb{font-size:11px;letter-spacing:2.8px;color:#d7e2d6;display:flex;align-items:center;gap:13px}
+.crumb:before{content:"";width:23px;height:1px;background:var(--accent)}
+.story-title{font:clamp(46px,6.5vw,92px)/1.25 var(--serif);font-weight:400;letter-spacing:4px;margin:30px 0 10px}
+.story-sub{font:italic 17px Georgia,serif;letter-spacing:3px;color:#c9d6c8;margin:0 0 34px}
+.story-meta{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid rgba(240,240,230,.35);border-bottom:1px solid rgba(240,240,230,.35)}
+.story-meta div{padding:14px 34px 14px 0;margin-right:34px;border-right:1px solid rgba(240,240,230,.25)}
+.story-meta div:last-child{border-right:0}
+.story-meta small{display:block;font-size:10px;letter-spacing:2.4px;color:#b9c8b8;margin-bottom:6px}
+.story-meta strong{font:16px var(--serif);font-weight:400;letter-spacing:2px}
+.story-intro{max-width:640px;font-size:14px;line-height:2.1;color:#d3ddd1;margin:26px 0 0;letter-spacing:.5px}
+.scroll-hint{position:absolute;z-index:2;bottom:30px;left:50%;transform:translateX(-50%);color:#cfd9cd;font-size:10px;letter-spacing:4px;text-align:center}
+.scroll-hint:after{content:"";display:block;width:1px;height:34px;background:linear-gradient(#cfd9cd,transparent);margin:10px auto 0;animation:hint 2.2s ease-in-out infinite}
+@keyframes hint{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1)}}
+
+/* ---------- 正文分节 ---------- */
+.chapter-section{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;max-width:1400px;margin:0 auto;padding:10vh 4.5%}
+.chapter-section.flip .prose{order:1}
+.chapter-section.flip .art-wrap{order:2}
+.art-wrap{position:relative;isolation:isolate;background:#27463c;aspect-ratio:4/3;overflow:hidden}
+.art-wrap img{width:100%;height:100%;object-fit:cover}
+.art-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(12,35,29,.53));pointer-events:none;z-index:1}
+.art-wrap .cap{position:absolute;left:22px;bottom:18px;color:#f0f0e6;font-size:11px;letter-spacing:2px;z-index:2}
+.art-wrap .num{position:absolute;top:18px;left:22px;color:#e8eee4;font:italic 15px Georgia,serif;z-index:2}
+html.night .art-wrap{background:#101d19}
+html.night .art-wrap img{filter:brightness(.66) saturate(.82)}
+.prose{max-width:540px}
+.kicker{font-size:11px;letter-spacing:2.8px;color:var(--accent);display:flex;align-items:center;gap:12px}
+.kicker:before{content:"";width:23px;height:1px;background:var(--accent)}
+.sec-title{font:clamp(30px,3.4vw,46px)/1.4 var(--serif);font-weight:400;letter-spacing:5px;margin:18px 0 24px}
+.quote{font:19px/1.95 var(--serif);color:var(--ink);border-left:2px solid var(--accent);padding:4px 0 4px 22px;margin:0 0 24px;letter-spacing:1px}
+.prose p{font-size:14.5px;line-height:2.2;color:var(--muted);margin:0 0 16px;letter-spacing:.5px;text-align:justify}
+html.night .quote{color:var(--ink)}
+
+/* ---------- 入场动画 ---------- */
+.reveal{opacity:0;transform:translateY(38px);transition:opacity .95s ease,transform .95s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+
+/* ---------- 页脚 ---------- */
+.story-foot{border-top:1px solid var(--line);margin:0 4.5%;padding:28px 0;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:1.5px;color:var(--muted);flex-wrap:wrap;gap:14px}
+.story-foot .next{border-bottom:1px solid var(--ink);color:var(--ink);padding:8px 0;font-size:13px}
+.story-foot .next:hover{color:var(--accent);border-color:var(--accent)}
+.credits{max-width:1400px;margin:0 auto;padding:0 4.5% 70px;font-size:10.5px;color:var(--muted);line-height:2;letter-spacing:.5px}
+
+/* ---------- 黑夜模式补充 ---------- */
+body,header,footer{transition:background-color .8s ease,color .8s ease}
+html.night .story-meta{border-color:rgba(220,230,224,.25)}
+html.night .story-meta div{border-right-color:rgba(220,230,224,.18)}
+html.night .chapter-way .dot{border-color:var(--muted)}
+
+@media(max-width:1100px){.chapter-way{display:none}}
+@media(max-width:900px){
+  .chapter-section{grid-template-columns:1fr;min-height:auto;padding:8vh 6%;gap:34px}
+  .chapter-section.flip .prose{order:2}
+  .chapter-section.flip .art-wrap{order:1}
+  .story-meta div{padding-right:20px;margin-right:20px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+.reduced *{animation:none!important;transition:none!important}
+.reduced .reveal{opacity:1;transform:none}

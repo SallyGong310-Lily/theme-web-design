@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#a9b8ad"/><stop offset="1" stop-color="#5c7a6f"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<g fill="#48635a" opacity=".6"><path d="M-50 300 Q260 190 600 260 T1250 240 V520 H-50Z"/><path d="M-50 390 Q360 300 780 350 T1250 350 V600 H-50Z" opacity=".55"/></g>
+<g fill="#33493f"><path d="M-40 470 Q300 420 640 450 T1250 440 V620 H-40Z" opacity=".8"/></g>
+<path d="M-20 560 Q600 520 1220 556 L1220 900 L-20 900 Z" fill="#48635a"/>
+<path d="M-20 640 Q600 600 1220 636 L1220 900 L-20 900 Z" fill="#5c7a6f"/>
+<path d="M-20 720 Q600 690 1220 716 L1220 900 L-20 900 Z" fill="#3f584e"/>
+<path d="M120 900 Q160 700 400 690 Q640 700 680 900 Q560 810 400 806 Q240 810 120 900 Z" fill="#22372f"/>
+<path d="M520 900 Q560 760 760 752 Q980 760 1020 900 Q880 830 760 828 Q640 830 520 900 Z" fill="#1c2f27"/>
+<g stroke="#8ba393" stroke-width="1.6" fill="none" opacity=".65">
+<ellipse cx="320" cy="860" rx="110" ry="16"/><ellipse cx="820" cy="870" rx="130" ry="18"/><ellipse cx="600" cy="840" rx="70" ry="11"/>
+</g>
+<g>
+<path d="M240 690 Q600 520 960 690 L960 730 Q600 570 240 730 Z" fill="#42564d"/>
+<path d="M240 690 Q600 520 960 690" fill="none" stroke="#2c423a" stroke-width="10"/>
+<path d="M330 900 Q600 700 870 900 Z" fill="#101d18"/>
+<path d="M368 900 Q600 738 832 900 Z" fill="#0a1410"/>
+<g stroke="#4d675c" stroke-width="3" opacity=".9"><path d="M420 660 q10 -34 30 -44"/><path d="M520 626 q8 -30 26 -40"/><path d="M640 620 q10 -32 28 -42"/><path d="M740 646 q8 -30 26 -40"/></g>
+<g fill="#5c7a63" opacity=".8"><ellipse cx="470" cy="676" rx="26" ry="9"/><ellipse cx="700" cy="664" rx="30" ry="10"/></g>
+</g>
+<g stroke="#2c423a" stroke-width="6" fill="none"><path d="M60 620 Q40 420 90 300"/><path d="M1130 640 Q1160 430 1100 320"/></g>
+<g fill="#33493f"><ellipse cx="70" cy="290" rx="90" ry="60"/><ellipse cx="1120" cy="300" rx="100" ry="66"/></g>
+<g fill="#e8efe6" opacity=".16"><ellipse cx="600" cy="500" rx="660" ry="120"/></g>
+</svg>

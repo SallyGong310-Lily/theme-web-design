@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#7d9184"/><stop offset="1" stop-color="#2a4038"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<g fill="#3c5248">
+<ellipse cx="200" cy="160" rx="260" ry="90"/><ellipse cx="520" cy="110" rx="300" ry="100"/><ellipse cx="880" cy="150" rx="280" ry="95"/><ellipse cx="1120" cy="100" rx="240" ry="85"/>
+</g>
+<g fill="#2a4038">
+<ellipse cx="320" cy="260" rx="300" ry="95"/><ellipse cx="700" cy="230" rx="320" ry="100"/><ellipse cx="1060" cy="260" rx="280" ry="95"/>
+</g>
+<g fill="#1d3129">
+<ellipse cx="460" cy="360" rx="340" ry="95"/><ellipse cx="900" cy="380" rx="320" ry="90"/><ellipse cx="120" cy="380" rx="240" ry="80"/>
+</g>
+<g stroke="#dfe7dd" stroke-width="2" opacity=".6" stroke-linecap="round">
+<path d="M80 480 q60 -12 120 0"/><path d="M420 470 q60 -12 120 0"/><path d="M800 500 q60 -12 120 0"/><path d="M1040 460 q50 -10 100 0"/>
+</g>
+<path d="M-20 620 Q600 580 1220 616 L1220 900 L-20 900 Z" fill="#22372f"/>
+<g stroke="#101d18" stroke-width="10" fill="none">
+<path d="M180 780 Q200 640 150 570 Q120 530 140 480"/>
+<path d="M520 790 Q545 640 490 560 Q460 515 480 460"/>
+<path d="M900 780 Q920 650 870 575 Q840 530 860 475"/>
+</g>
+<g fill="#16281f">
+<path d="M150 490 q-70 -40 -60 -96 q40 24 66 20 q-30 -50 -6 -96 q34 36 60 44 q-8 -56 24 -92 q22 48 18 90 q40 -28 88 -18 q-40 40 -48 72 q46 -6 76 26 q-52 16 -78 38 q-40 34 -84 24 Z" opacity=".9"/>
+<path d="M490 470 q-64 -36 -56 -88 q36 22 60 18 q-28 -46 -6 -88 q32 32 56 40 q-8 -50 22 -84 q20 44 16 82 q38 -26 82 -16 q-38 36 -44 66 q42 -6 70 24 q-48 14 -72 34 q-36 32 -78 22Z" opacity=".9"/>
+<path d="M870 485 q-66 -38 -58 -92 q38 24 62 20 q-30 -48 -6 -92 q33 34 58 42 q-8 -52 23 -87 q21 46 17 86 q39 -27 85 -17 q-39 38 -46 68 q43 -6 72 25 q-49 16 -73 38 q-38 34 -80 24Z" opacity=".9"/>
+</g>
+<g fill="#1d3129" opacity=".9">
+<path d="M-20 900 Q200 820 480 850 T1220 830 L1220 900 Z"/>
+</g>
+<g stroke="#dfe7dd" stroke-width="3" stroke-linecap="round" opacity=".8">
+<path d="M300 560 l-14 50"/><path d="M680 540 l-14 50"/><path d="M1020 560 l-14 50"/>
+</g>
+</svg>

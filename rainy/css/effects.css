@@ -1,0 +1,170 @@
+/* ============================================================
+   雨季 · 新版 氛围特效样式
+   包含：动态雨滴 / 水面涟漪 / 闪电光影 / 黑夜模式 / 氛围控制条
+   ============================================================ */
+
+/* ---------- 动态雨滴层（三层景深 + 阵风 + 透视收敛） ---------- */
+.rain-layer{position:absolute;inset:0;z-index:6;pointer-events:none;overflow:hidden}
+.rain-layer .rl{position:absolute;inset:0}
+.rain-layer .drop{
+  position:absolute;top:-15%;
+  width:var(--w,1.5px);
+  height:var(--h,60px);
+  border-radius:2px;
+  /* 运动模糊原理：快而长的雨丝更透明，慢而短的更实 */
+  background:linear-gradient(to bottom,transparent 0%,rgba(223,233,226,var(--o,.5)) 35%,rgba(223,233,226,.95) 100%);
+  transform:rotate(calc(var(--wind,9deg)*var(--wk,1) + var(--persp,0deg)));
+  animation:fx-fall var(--d,1s) linear infinite;
+  animation-delay:var(--dl,0s);
+  filter:blur(var(--blur,0px));
+  will-change:transform;
+}
+@keyframes fx-fall{
+  /* 位移沿旋转后的轴：风向改变时整片雨丝同步摆动 */
+  to{transform:rotate(calc(var(--wind,9deg)*var(--wk,1) + var(--persp,0deg))) translate(0px,1500px)}
+}
+
+/* ---------- 水面涟漪 ---------- */
+.fx-ripples{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.fx-ripples .ripple{
+  position:absolute;
+  width:34px;height:9px;
+  border:1px solid rgba(220,232,222,.75);
+  border-radius:50%;
+  transform:translate(-50%,-50%) scale(.2);
+  opacity:0;
+  animation:fx-ripple 2.6s ease-out forwards;
+}
+@keyframes fx-ripple{
+  0%{transform:translate(-50%,-50%) scale(.15);opacity:0}
+  15%{opacity:.65}
+  100%{transform:translate(-50%,-50%) scale(1.6);opacity:0}
+}
+
+/* ---------- 落水溅珠 ---------- */
+.fx-splashes{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.fx-splashes .sp{
+  position:absolute;
+  width:var(--s,3px);height:var(--s,3px);
+  border-radius:50%;
+  background:rgba(223,233,226,.85);
+  opacity:0;
+  animation:fx-splash var(--d,.45s) ease-out forwards;
+}
+@keyframes fx-splash{
+  0%{transform:translate(0,0) scale(1);opacity:.85}
+  55%{opacity:.6}
+  100%{transform:translate(var(--sx,10px),var(--sy,-14px)) scale(.4);opacity:0}
+}
+
+/* ---------- 水面薄雾（缓慢漂移，雨大时更浓） ---------- */
+.fx-mist{
+  position:absolute;left:-20%;bottom:16%;width:140%;height:30%;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(ellipse 48% 62% at 28% 62%,rgba(208,224,214,.11),transparent 70%),
+    radial-gradient(ellipse 44% 56% at 68% 48%,rgba(208,224,214,.09),transparent 72%),
+    radial-gradient(ellipse 36% 48% at 50% 80%,rgba(208,224,214,.07),transparent 75%);
+  filter:blur(7px);
+  animation:fx-mistdrift 28s ease-in-out infinite alternate;
+  opacity:.6;
+  transition:opacity 1.5s ease;
+}
+@keyframes fx-mistdrift{
+  from{transform:translateX(-3.5%)}
+  to{transform:translateX(3.5%)}
+}
+
+/* ---------- 闪电光影 ---------- */
+.fx-lightning{
+  position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    radial-gradient(ellipse 90% 55% at 72% -8%,rgba(255,255,255,.95) 0%,rgba(226,240,255,.5) 32%,transparent 68%),
+    linear-gradient(rgba(210,228,255,.22),transparent 55%);
+  opacity:0;
+}
+.fx-lightning.flash{animation:fx-flash 1.5s ease-out}
+@keyframes fx-flash{
+  0%{opacity:0}
+  5%{opacity:.9}          /* 主闪 */
+  9%{opacity:.08}         /* 熄灭 */
+  14%{opacity:.72}        /* 回闪 */
+  24%{opacity:.06}
+  30%{opacity:.38}        /* 余闪 */
+  42%,100%{opacity:0}
+}
+/* 闪电时舞台整体提亮（光影叠加在画面上） */
+.stage.flash-bright .slide .art{filter:brightness(1.35) contrast(1.05);transition:filter .1s}
+html.night .stage.flash-bright .slide .art{filter:brightness(1.05) contrast(1.05)}
+.stage .art{transition:filter .8s ease-out}
+
+/* ---------- 黑夜模式 ---------- */
+html.night{
+  --paper:#0f1714;
+  --ink:#dce6de;
+  --muted:#8ba39a;
+  --line:#2a3b35;
+  --accent:#c96b50;
+}
+html.night body{background:var(--paper)}
+html.night .collect{background:#22352e;color:#e7efe8}
+html.night .collect:hover{background:#2e463d}
+html.night .pager button:hover{background:#1a2622;border-color:var(--muted)}
+html.night .motion:hover{border-color:var(--muted)}
+html.night textarea{border-color:#4a5f58;background:rgba(255,255,255,.03)}
+html.night .stage{background:#101d19}
+html.night .stage:after{background:linear-gradient(transparent 42%,rgba(3,10,8,.82))}
+html.night .slide .art{filter:brightness(.66) saturate(.82)}
+/* 夜空：舞台顶部加深蓝夜幕 */
+html.night .fx-nightsky{
+  position:absolute;inset:0;z-index:4;pointer-events:none;
+  background:linear-gradient(180deg,rgba(8,14,26,.55) 0%,rgba(8,14,26,.18) 45%,transparent 70%);
+  opacity:0;transition:opacity 1.2s ease;
+}
+html.night .fx-nightsky{opacity:1}
+html.day .fx-nightsky{opacity:0}
+
+/* 模式切换的柔和过渡 */
+body,header,footer,dialog,.collect,.pager button{transition:background-color .8s ease,color .8s ease,border-color .8s ease}
+.slide .art{transition:filter 1.2s ease}
+
+/* ---------- 氛围控制条（雨水磨砂玻璃质感） ---------- */
+.fx-bar{
+  position:fixed;right:22px;bottom:22px;z-index:30;
+  display:flex;align-items:stretch;
+  padding:5px;
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(242,240,232,.62),rgba(242,240,232,.34));
+  -webkit-backdrop-filter:blur(18px) saturate(1.4);
+  backdrop-filter:blur(18px) saturate(1.4);
+  border:1px solid rgba(255,255,255,.55);
+  box-shadow:0 10px 34px rgba(12,35,29,.20),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(35,62,55,.06);
+}
+.fx-bar button{
+  position:relative;
+  display:inline-flex;align-items:center;gap:8px;
+  background:none;border:0;
+  padding:10px 16px;border-radius:999px;
+  font-size:12px;letter-spacing:2.5px;
+  color:var(--ink);
+  cursor:pointer;
+  transition:background-color .35s ease,color .35s ease;
+}
+.fx-bar button+button::before{
+  content:"";position:absolute;left:-2px;top:50%;transform:translateY(-50%);
+  width:1px;height:14px;background:rgba(35,62,55,.22);
+}
+.fx-bar button:hover{background:rgba(35,62,55,.08)}
+.fx-bar button[aria-pressed="true"]{background:rgba(35,62,55,.13);color:var(--accent)}
+.fx-ic{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
+html.night .fx-bar{
+  background:linear-gradient(135deg,rgba(18,28,24,.55),rgba(18,28,24,.32));
+  border-color:rgba(255,255,255,.14);
+  box-shadow:0 10px 34px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.08);
+}
+html.night .fx-bar button+button::before{background:rgba(220,230,224,.2)}
+html.night .fx-bar button[aria-pressed="true"]{background:rgba(220,230,224,.12);color:var(--accent)}
+@media(max-width:640px){
+  .fx-bar{right:10px;bottom:10px;padding:4px}
+  .fx-bar button{padding:9px 12px;gap:6px}
+  .fx-bar button span.txt{display:none}
+}
