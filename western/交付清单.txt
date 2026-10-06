@@ -1,0 +1,39 @@
+WEST 西部 / 无垠之境 — 交付清单
+2026-09-30
+全部必需交付物已核对：可编辑 SVG、单文件离线原型、本地原创图片、PNG 预览、使用说明。
+HTML 18 项功能检查通过；桌面与手机 SVG XML 有效并已渲染检查。
+以下为 ZIP 内交付文件的 SHA-256（本清单不对自身计算哈希）：
+
+WEST.html
+  1830301 bytes
+  SHA-256 66e4c92f2987d710536035ba8a52a61271b9a25af60b6eea6ef90128d541f731
+WEST-desktop-editable.svg
+  2062337 bytes
+  SHA-256 5fc56858bacac504647d73a7d8cf50b3f473edf454f55606038263ac8342e92e
+WEST-mobile-editable.svg
+  2060722 bytes
+  SHA-256 34a3a2b3c78e785be837460d199f7ec5ccf07e4c07fb1622f89ea0e8f9bbf064
+preview-desktop.png
+  545380 bytes
+  SHA-256 f9ea66b13ffdce632e51a3af6d83faf88e78ca1a5f99a702f77b51b8e45e1b89
+preview-mobile.png
+  270342 bytes
+  SHA-256 029f79a889943fa8fe0403d98f4933a8127381eb4f39dce6e9392cebcb5e0244
+使用说明.txt
+  3433 bytes
+  SHA-256 81aa78ad7db57f3c64b954456cb70bb54a66058701a25a90011249a7f07b1a36
+图片来源与生成记录.txt
+  2614 bytes
+  SHA-256 923998b278d8390639f6453e72dcba5553d6ce56a3398253fa0d296284be12e5
+verification.json
+  2200 bytes
+  SHA-256 6609a277adf5b5de31d4a1068efe77bb53a0cce27a69ac662bdb7554c29e2597
+assets/01-mesa.jpg
+  171862 bytes
+  SHA-256 a1e2a45536dec93064cac347d44d8f4822368a605c60021a5235707451e60a4c
+assets/02-dunes.jpg
+  126017 bytes
+  SHA-256 fc76400f060d1fbf339473c62b94024b7432a7855174c92d42cbe0d59c4dfacc
+assets/03-canyon.jpg
+  292086 bytes
+  SHA-256 0e900ef88a7f9c8f6284d6efd3d6ffd4554b7ee231d5051eb287d4c468e80d83

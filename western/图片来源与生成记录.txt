@@ -1,0 +1,15 @@
+WEST 西部 — 原创图像记录
+生成时间：2026-09-30
+工具：OpenAI 内置 image_gen（imagegen 技能，非 CLI / API 付费回退）
+三张地貌图均为本次新生成，无第三方图库素材。图像为虚构地貌表达，不代表真实线路或精确地点。不能据此声称独占版权或现实摄影纪实性。
+本地 JPG 由原图缩放、压缩得到，仅做网页交付格式转换；原始 PNG 同目录保留。页面的文字、品牌字标、罗盘、等高线与路径为独立的可编辑代码/矢量。
+没有引用远程图片、远程字体、外部脚本或统计服务。
+
+01-mesa：
+Use case: photorealistic-natural. Asset type: panoramic hero image for premium Chinese western wilderness travel editorial website WEST. Create an original cinematic photograph of vast American southwestern desert sandstone mesas and buttes, layered distant mountain silhouettes, a thin winding pale dirt track into the landscape, arid sage scrub in the foreground. Very wide landscape composition 3:2, warm dusk side lighting, dusty apricot sky occupying upper half, red ochre rock, muted deep tobacco shadows, analog medium format photography, beautiful quiet cinematic luxury expedition mood. Dramatic main mesa to right, lower distant rocks on left. No people, no buildings, no text, no logos, no watermarks. Natural believable geology, refined editorial color grading.
+
+02-dunes：
+Use case: photorealistic-natural. Asset type: western wilderness luxury travel editorial website landscape photograph, 3:2. Original image of sculptural immense sand dunes in the American west under pale apricot twilight, strong sweeping sinuous dune ridge from lower left foreground into upper right, distant bluish slate mountains small on horizon, vast quiet space. Refined analog medium format photography, wind ripples, ochre, muted sand beige, deep shadow browns. Minimal breathtaking composition, authentic natural landforms, no people, no text, no logo, no watermark.
+
+03-canyon：
+Use case: photorealistic-natural. Asset type: luxury western wilderness editorial landscape photograph, 3:2. Original aerial view into enormous winding red sandstone canyon in the American southwest, turquoise green river tracing elegant curve at bottom, deep canyon walls, flat high desert plateau horizon under pale cream early morning sky. Natural layered sandstone, muted rusty terracotta and warm stone beige, atmospheric distant mesas. Quiet sublime mood, refined magazine medium format film photography. No people, no buildings, no text, no logos, no watermarks. Entirely realistic geology, high detail.

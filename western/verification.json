@@ -1,0 +1,99 @@
+{
+  "testedAt": "2026-09-30T12:45:28.566Z",
+  "browser": "Chrome / Playwright",
+  "checks": [
+    {
+      "name": "Offline: no external requests",
+      "passed": true
+    },
+    {
+      "name": "Mask transition in progress",
+      "passed": true
+    },
+    {
+      "name": "Next updates content and selection",
+      "passed": true
+    },
+    {
+      "name": "Keyboard next reaches canyon",
+      "passed": true
+    },
+    {
+      "name": "Carousel wraps",
+      "passed": true
+    },
+    {
+      "name": "End selects last slide",
+      "passed": true
+    },
+    {
+      "name": "Layered pointer parallax applied",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion switches immediately",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion disables transforms",
+      "passed": true
+    },
+    {
+      "name": "No active animation with reduced motion",
+      "passed": true
+    },
+    {
+      "name": "Planner preselects current landscape",
+      "passed": true
+    },
+    {
+      "name": "Escape closes modal and returns focus",
+      "passed": true
+    },
+    {
+      "name": "Local plan generates correct content",
+      "passed": true
+    },
+    {
+      "name": "Text download exists",
+      "passed": true
+    },
+    {
+      "name": "Philosophy dialog opens",
+      "passed": true
+    },
+    {
+      "name": "Mobile has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px narrow viewport fits",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "svgChecks": [
+    {
+      "name": "WEST-desktop-editable.svg",
+      "errors": 0,
+      "texts": 87,
+      "paths": 4,
+      "images": 4
+    },
+    {
+      "name": "WEST-mobile-editable.svg",
+      "errors": 0,
+      "texts": 83,
+      "paths": 4,
+      "images": 4
+    }
+  ],
+  "svgXMLValid": true,
+  "visualReview": "Desktop and mobile HTML and editable SVG rendered and visually reviewed.",
+  "figmaImport": "Not tested in Figma; native SVG text, shapes, paths and embedded JPEG images verified."
+}
