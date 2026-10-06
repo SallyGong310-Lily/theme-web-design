@@ -1,0 +1,50 @@
+/* ============================================================
+   海洋 · 新版 洋流流动动画
+   等深线 dash 流动 + 光斑扫过，兼容页面自带「减少动态」
+   ============================================================ */
+.scene.current svg path{
+  stroke-dasharray:var(--dash,8 90);
+  stroke-linecap:round;
+  animation:current-flow var(--dur,12s) linear infinite;
+  animation-delay:var(--del,0s);
+}
+@keyframes current-flow{to{stroke-dashoffset:var(--off,-560)}}
+
+/* 光斑：缓扫过海面（等深线上层） */
+.hero-art{position:relative}
+.hero-art::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 30%,rgba(150,214,238,.14) 42%,rgba(199,178,238,.10) 50%,rgba(128,217,209,.12) 58%,transparent 70%);
+  background-size:260% 260%;
+  mix-blend-mode:screen;
+  animation:light-sweep 14s ease-in-out infinite;
+}
+@keyframes light-sweep{
+  0%,100%{background-position:0% 0%}
+  50%{background-position:100% 100%}
+}
+
+/* 尊重系统/手动减少动态（页面把 reduced 类挂载在 html 上） */
+html.reduced .scene.current svg path,.reduced .scene.current svg path{animation:none;stroke-dasharray:none}
+html.reduced .hero-art::after,.reduced .hero-art::after{animation:none;opacity:.5}
+@media(prefers-reduced-motion:reduce){
+  .scene.current svg path{animation:none;stroke-dasharray:none}
+  .hero-art::after{animation:none;opacity:.5}
+}
+
+/* ============ 海的五种状态 入口区 ============ */
+.states{max-width:1400px;margin:0 auto;padding:10vh 4.5% 4vh}
+.states-intro{color:var(--muted);font-size:14px;letter-spacing:.5px;margin:18px 0 34px;max-width:560px;line-height:1.9}
+.states-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.state-card{position:relative;display:block;border-radius:16px;overflow:hidden;isolation:isolate;aspect-ratio:3/3.6;background:var(--navy);transition:transform .35s ease,box-shadow .35s ease}
+.state-card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(6,38,51,.28)}
+.state-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.state-card:hover img{transform:scale(1.06)}
+.state-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 34%,rgba(6,38,51,.88) 100%)}
+.state-card>div{position:absolute;left:16px;right:16px;bottom:14px;z-index:2;color:#f2f7f4}
+.state-no{font:italic 13px Georgia,serif;color:var(--accent);letter-spacing:2px}
+.state-card h3{font:22px var(--serif);font-weight:400;letter-spacing:2px;margin:6px 0 4px}
+.state-card p{font-size:11.5px;color:#c3d6cf;letter-spacing:.6px;margin:0}
+.state-arr{position:absolute;top:14px;right:14px;z-index:2;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(242,247,244,.14);color:#f2f7f4;backdrop-filter:blur(4px);transition:background .3s}
+.state-card:hover .state-arr{background:var(--accent);color:var(--navy)}
+@media(max-width:640px){.states-grid{grid-template-columns:1fr 1fr;gap:12px}.state-card{aspect-ratio:3/3.9}}
